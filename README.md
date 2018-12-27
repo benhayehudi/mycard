@@ -1,8 +1,6 @@
-# Mycard
+# MyCard Ruby Gem
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mycard`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Create your own business card as a Ruby gem quickly and simply. The inspiration for this project comes from [Tierney Cyren](https://github.com/bnb/bitandbang)'s npm card project. Why should our Javascript friends have all the fun? 🤣
 
 ## Installation
 
@@ -22,7 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To run MyCard navigate to the project folder in your favorite terminal and type `bin/mycard`. This will give you my business card, which is great to have, but you probably want to put in your own details. To do so open up the project in your preferred code editor and change the details in the `details.json` file. Once you save and run the executable again from your terminal you will now see your details. 
+
+Want to publish your business card to RubyGems.org? Check out their [publishing guide](https://guides.rubygems.org/publishing/). You will need to sign up for a user account and follow the instructions. 
 
 ## Development
 
