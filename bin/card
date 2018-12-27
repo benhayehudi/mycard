@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+$LOAD_PATH.unshift File.expand_path('..', __FILE__)
+require 'json'
+require_relative '../lib/mycard'
+
+file = File.read('./lib/details.json')
+details = JSON.parse(file)
+
+card = Mycard::Card.new(details)
+
+card.call
