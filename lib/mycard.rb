@@ -1,5 +1,5 @@
 require "./lib/mycard/version.rb"
-require 'pry'
+require 'colorize'
 
 module Mycard
   class Error < StandardError; end
@@ -24,22 +24,22 @@ module Mycard
     end
 
     def display_card
-      puts "╭────────────────────────────────────────────────────────────────╮"
+      puts "╭────────────────────────────────────────────────────────────────╮".colorize(:green)
       puts "                                                                  "
-      puts "                         #{@name}                                 "
+      puts "                         #{@name}                                 ".colorize(:color => :cyan, :mode => :bold)
       puts "                                                                  "
-      puts "        Work: #{@job_title} @ #{@company}                         "
-      puts "        Portfolio: #{@portfolio}                                  "
+      puts "        Work: #{@job_title} @ #{@company}                         ".colorize(:blue)
+      puts "        Portfolio: #{@portfolio}                                  ".colorize(:blue)
       puts "                                                                  "
-      puts "        Twitter: #{@twitter}                                      "
-      puts "        LinkedIn: #{@linkedin}                                    "
-      puts "        GitHub: #{@github}                                        "
-      puts "                                                                  "
-      puts "                                                                  "
-      puts "        Card: gem install #{@gem}                                 "
+      puts "        Twitter: #{@twitter}                                      ".colorize(:blue)
+      puts "        LinkedIn: #{@linkedin}                                    ".colorize(:blue)
+      puts "        GitHub: #{@github}                                        ".colorize(:blue)
       puts "                                                                  "
       puts "                                                                  "
-      puts "╰────────────────────────────────────────────────────────────────╯"
+      puts "        Card: gem install #{@gem}                                 ".colorize(:color => :cyan, :mode => :bold)
+      puts "                                                                  "
+      puts "                                                                  "
+      puts "╰────────────────────────────────────────────────────────────────╯".colorize(:green)
 
     end
   end
