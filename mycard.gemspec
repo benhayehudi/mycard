@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "mycard/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "mycard"
+  spec.name          = "bengreenberg"
   spec.version       = Mycard::VERSION
   spec.authors       = ["Ben Greenberg"]
   spec.email         = ["bengreenberg@gmail.com"]

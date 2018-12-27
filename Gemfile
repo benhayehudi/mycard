@@ -7,3 +7,6 @@ gemspec
 
 # Testing
 gem 'rspec'
+
+# Add some color
+gem 'colorize'

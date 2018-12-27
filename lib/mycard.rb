@@ -24,7 +24,23 @@ module Mycard
     end
 
     def display_card
-      puts "my name is #{@name}"
+      puts "╭────────────────────────────────────────────────────────────────╮"
+      puts "                                                                  "
+      puts "                         #{@name}                                 "
+      puts "                                                                  "
+      puts "        Work: #{@job_title} @ #{@company}                         "
+      puts "        Portfolio: #{@portfolio}                                  "
+      puts "                                                                  "
+      puts "        Twitter: #{@twitter}                                      "
+      puts "        LinkedIn: #{@linkedin}                                    "
+      puts "        GitHub: #{@github}                                        "
+      puts "                                                                  "
+      puts "                                                                  "
+      puts "        Card: gem install #{@gem}                                 "
+      puts "                                                                  "
+      puts "                                                                  "
+      puts "╰────────────────────────────────────────────────────────────────╯"
+
     end
   end
 end
